@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8"> <!--Para que el navegador conozca los caracteres--> 
+<title>Taller 2</title>
+<body>
+<link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet"> <!--Es utilizado para poder enlazar sitios de estilos-->
+<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet"> <!--Enlaza sitios de estilos-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!--Estilos-->
+<link rel="stylesheet" type="text/css" href="css/Style7.css" /> <!--Estilos de texto-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> <!--Estilos--> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="Script.js"> </script> <!--se utiliza para insertar o hacer referencia a un script ejecutable dentro de un documento HTML o XHTML-->
+</head>
+<body> 
+<div class="titulo"> 
+<div class="Contenido">
+<p class="logo">-------------------------------------------------------------------------------------------------------------------------"TALLER2" (METODO DE ENVIO GET)----------------------------------------------------------------------------------------------------------------------</p> <!--Logo de la Pagina o el Formulario-->
+</div>
+<div class="contenido">
+<div class="principal">
+<form method="get" action="taller.php" id="taller">
+<table>
+<!--ingresar el Codigo--> 
+<div class="Codigo">
+<label for="codigo">CODIGO</label>
+<input type="number" class="form-control" name="Codigo" id="Codigo" placeholder="Ingrese su Codigo"> <!--Numero del codigo / form le da estilo al boton-->
+</div>
+<!--ingresar Nombre--> 			  		  
+<div class="Nombre">
+<label for="Nombre">NOMBRE</label>
+<input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="ingrese su nombre">
+</div>	
+<!--ingresar Apellidos--> 
+<div class="Apellidos">
+<label for="Apellidos">APELLIDOS</label>
+<input type="text" class="form-control" name="Apellidos" id="Apellidos" placeholder="Ingrese sus apellidos">
+</div>
+<!--ingresar Telefono-->	
+<div class="Telefono">
+<label for="Telefono">TELEFONO</label>
+<input type="tel" class="form-control" name="Telefono" id="Telefono" placeholder="Ingrese sus Telefono 8-digitos">
+</div>
+<!--ingresar Email--> 
+<div class="Email">
+<label for="Email">EMAIL</label>
+<input type="email" class="form-control" name="Email" id="Email" placeholder="Ingrese su Email">
+</div>
+<!--ingresar Genero--> 
+<div class="Genero">
+<label for="Genero">GENERO</label>
+<input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+<input type="radio" name="sexo" value="mujer" /> Mujer 
+<input type="radio" name="sexo" value="Otro" /> Otro
+</div>
+<!--ingresar Edad-->             
+<div class="Edad">
+<label for="Edad">EDAD</label>
+<input type="number" class="form-control" name="Edad" id="Edad" placeholder="Ingrese su Edad">
+</div>
+<!--Observaciones-->
+<div class="Observaciones">
+<label for="Observaciones">Observaciones</label>
+<input type="text" class="form-control" name="Obeservaciones" id="Observaciones" min="0" maxlength="200">
+</div>
+<div>
+<tr> 	
+<input type="submit" name="boton" id="boton" class="btn btn-default submit" class="fa fa-paper-plane" value="Enviar Datos" >
+</td>
+</tr>
+</div>
+</div>
+</table>
+</div>
+</body>
+</html>
